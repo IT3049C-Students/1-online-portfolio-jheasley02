@@ -55,7 +55,7 @@ describe("html content", function () {
       (ele) => ele.tagName === `DIV`
     );
 
-    expect(sectionElements.length).toBeGreaterThanOrEqual(4);
+    expect(sectionElements.length).toBeLessThanOrEqual(4);
   });
 
   it(`contains 1 image of sections`, function () {
